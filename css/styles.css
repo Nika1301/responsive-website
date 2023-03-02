@@ -48,9 +48,6 @@ the start of the introduction. */
 
 /* ==[ INTRODUCTION ]== */
 
-/* !-- In short: Look at the selectors, then scroll down to the bottom of the file. 
-Write your media queries there. --! */
-
 /* Hint 1: Investigate! Take a good, long look at the previews to find out 
 which elements need to change at what point. It's always useful to change
 the size of your viewport or to take a look at the dev tools.
@@ -243,11 +240,55 @@ CSS when certain conditions that we declare are met - such as a certain viewport
 width, etc. */
 
 /* Media Query Tablet */
+
 /* --- */
 /* Replace this comment with your media query. */
 /* --- */
+@media (min-width: 600px) {
+  .card-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .intro-text {
+    font-size: 22px;
+    width: 90%;
+    text-align: center;
+  }
+  .product-card {
+    width: 45%;
+    height: 250px;
+  }
+
+  .--forest {
+    width: 90%;
+  }
+}
 
 /* Media Query Desktop */
 /* --- */
 /* Replace this comment with your media query. */
 /* --- */
+@media (min-width: 1200px) {
+  body {
+    width: 1200px;
+    margin: auto;
+  }
+
+  .card-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .intro-text {
+    font-size: 28px;
+  }
+  .main-header {
+    width: 1200px;
+  }
+  .navbar {
+    width: 1200px;
+  }
+}
